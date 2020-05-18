@@ -1,0 +1,45 @@
+MLOPS LETURE L -22 04:05:2020
+
+>>.NN is just type of mathematical function behind THE SCENE
+>>.NN great thing is they do auto feature selction
+>>.what machine will tell is paramter like :in bias and weight
+>>. what we have to chng/tell to machinelearning that is "Hyperparameter" like : no. of neuron , no. of layer and how much feature they need or no. of epocs 
+>>. NN is a approach/architecture which know no. of feture but dont know which one is imo .So it work like human mind
+>>.more no. hidden layers = more good in doing Selction of good feature and accurate weight and bias
+>>. A.f fo milti classification output is Softmax adn many more like this
+>>. in pndas if want to count per categorical variable then we hava funtion in it 
+C:y.values_count 
+>>. IF OUR PREDICTION IS CATEGORICAL THEN WE HAVE TO CONVERT IT INTO DUMMY_VARIABLE BUT  we should not drop any of the variable bcz it is our output as it not a feature which will do dublicacy
+>>drop a column in data we have option in pndas 
+>>.C:dataset.drop('class',axis=1)
+>>.before programmingit is god to do fature selection
+>>.DEnse funtion bydefault use kernel intializer = golot_intializer ;it will decide rndom wieght and bias
+>>. if we have categorical virable then we have to tell in last neuron how much categorical variable we have means each nueron for ouput we need :her output ke liye ek neuron
+>>.loss funtion for multi classification is categorical_crossentropy
+>>.model.layer[0].input : it will give info about layer  
+>>.
+
+
+>>>>DEVOPS LECTTURE 22|7 04/05/2020>>>>>>>>>>>>
+>>.to run a program we need o.s 
+>>. we 4 ways to depoly os  on  1). bare metal 2).virtual mahine 3).container 4).cloud computing
+>>. to see docker ip c: docker inspect 
+>>. every himage has its history . to see hitory c:docker hisotry [osname] it will tell us baout main content where it has its appache web folder linked
+>>.if want to copy fram base os to dcoker  os 
+c:docker cp [file] osnmae:path 
+>>. if want to link/mount a folder from base os to docker os folder so we have to do it at the tim of launching it 
+>>.docker run -dit -v /foldername:dockrfoldername --name [osame] [osimage]
+liml/mount means if there is any chng in base folder it will chng in docker folder 
+>>.whenever docekr os is launched .it is launched in isolated world means no one can connect to these os from outside world 
+>>. not to expose these docker os we have networking concept pat means adress transfaring 
+>>.docker run on a port no. 80
+c: docker runn -dit -p 8083:80 -v /lwweb:/usr/local/appache2/httpds
+>>.as we are doing automation 
+so root user have all the power to do anything but jenkins user dont 
+>>. if wna jenkns user to get all the power lke root we have to chng in linux sudeurs file
+>>.in that we have to give power to jenkins
+>>. in Jenkisn we know that jenkin has all power but JENKIN dont for this we have to use sudo 
+>>.IN jenkins if want to triger a job after complete of that job
+means we have to do job chaining then the in jjob2 we have to give trigger that after the first complte for this we have Build triiger option in config 
+and give the job after which we want it trigger means kiske baad chalani hai
+

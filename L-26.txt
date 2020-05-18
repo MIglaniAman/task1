@@ -1,0 +1,31 @@
+MLOPS LECTURE 26 : 12/05/2020
+>>.CONVOLUTION IS TECHNIQUE which is same used by are eye.
+>>.resize of feature is done by pooling also called subsampling
+>>.NN= fully connected layer
+>>. typically pool size is 2x2
+>>.before feed to pooling layer we use 'relu' activation funtionn 
+>>.we have to hit and trial for no. crp
+>>.CNN is just a architecture
+>>.learned and searched about  LENET and ALEXNET
+>>.in image if we do anything then the pixel chnges but our object will remain same (for ex: crop or resize)
+>>.if want to increase our dataset from old dataset just by manipualting the images called augumented . to do so we have to see keras documntation 
+>>.in this search about augumentaion 
+>>. doing augumentation also means preprocessing
+>>.to import a model we load a funtion in keras 
+ 	c:from kers.models impor load_moedal
+ 	 c: model = load_model('')
+the data for prediction we are giving should be same as the data given for training 
+>>.the data we are for prediction should be same as the data for triang 
+to do so we have to chng the test_data
+c: from preprocessing import image 
+test_image =image.load.image('foldename',image size=())
+>>. to convert prediction dataimage into numpy and it should be in 4d 
+	C:test_image = image.image+to+array(test_image)
+converting numpy into 3d into 4d 
+	c:test_image =np.expand_dims(test_image,axis=0)
+>>.now if we do prediction then it will give 0 and 1
+>>.to see what is zero and one 
+	c: trainig_set.class.indices
+
+
+DEVOPS LECTURE 26 : 12/05/2020

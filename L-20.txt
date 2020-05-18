@@ -1,0 +1,38 @@
+MLOPS LECTURE 20 : 1/MAY/2020
+
+
+>>.in unsupervised learnig wehave to give inout only 
+>>. i supervised learningwe have to give inout and output adn then train the model 
+>>.neuron is just lkke a mathemaical funtiion
+>>.when we have big data million of rows and coloumn then it is hard to do feautre selction or domain expert or use old ML method 
+>>.ANN is approach which work like huma being mind
+>>it do 2 things ||ar :1).backpropagation and 2).feature elemination 
+>>.more layer means better learning 
+>> before we do feature elemination we have to do feature engineering
+
+
+
+<<<<<<<<<DEVOPS LECTURE :1/05/2020>>>>>>>>>>>
+>>. behind the scene when weintialize  a w.s git also create a hidden folder called .git
+>>.  .git  folder is faloder which keep all the info of the file means a db for version
+>>git only maintain matadata 
+>>.if we wnt to do roll back we have to do copy in git db means we have  to do commmit than only git will do bACKUP
+>>. git always give coy.commit name called commit id
+>>. as we do we commit in local repo means our data is coorect and we cant creat a backu  of that data means creating versison
+>>.if as we commit and we want to puch it to github we hve to do it manually to do it aotu  we have option in git called HOOKS 
+>>. hooks is option in git to do thins auto so as we do commit it auto pust to github 
+>>.for this we to go in c: .git/hooks
+and there we have to create bash scrip with name post-commit 
+c: notepad post-commit(no extn)
+>> #!/bin/bash   to do this we have to write this to tll it is bash scrip command
+    git push
+>>>>>>>>>>>>>>.JENKINS>>>>>
+>> if we want to auto run our job means we have to run our job at particular then we have option in jenkin e.i is trigger our job
+>>. for we wantour job to auto dwnld our file from github then we have to trigger this job
+>>. not to do this we option in jenkins > configure > build periodicly 
+in this we can st our timer it will do our job at that tim e for ex: if want our job to run at every 1 min than we have to write it format only * * * * * 
+this will runthe job after every 1 min
+>>. but if our use case is to tun the job only when there is chng then we have concept pol scm 
+it will only etch the meya data and if it see that there is some chng on 
+then only it will dwnld the data 
+othrwise it will not run tha job but behind the scene it will keep on running nd fetching the data

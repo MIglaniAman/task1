@@ -1,0 +1,30 @@
+MLOPS LECTUTE 21 : 2/05/2020
+>>.diffrent kernel intializer 1).random 2). xaviers
+>>.optimizer help in selction next bias and weight means a perfect jump to get best both of them 
+>>.a better optmizer thand G.d is stochastic gradient
+>>. in one neuron percetion of liniear regrssion output will be continous
+>>.if we want that in linear funtion are y/predcition dont give value >1 and <0 then we have to use acyivation funtn called sigmoid 
+>>. sigmoid funtion = 1/(1+e^-z) if z = b+wx , then we hae done control over our lliniear funtion and and we will get our value b/w 0 and 1
+>>. and this concept in which we use such tye of funtion is called activation funtion
+>>. there many activtion which we can use accdring to our need
+>>. we use actiavtion funtion when we need our output of ON(1) or OFF(0)
+>>. if our problemneed is regression in that we dont need any activation funtion bcz in thhat we need contion output
+>>.but in binary classification we need activation funtion
+>>.we need more neuron in BIG DATA bcz it help in auto feature selection
+>>.in linear regression -> y=b+wx here y and w are parameters
+>>optimizers never work without loss funtion
+>>.in regression problm we use loss funtio MSE but in binary  classifictio we use a loss funtion name "binary_crossentrpohy"
+>>.in first we layer we have to tell input dim means no. of feature we are having
+>>.and only in last layer we need to aplly activation funtion neccessary 
+
+
+DEVOPS LECTURE 6 : 2/05/2020
+>>. we have 2 ways to donwload to do our job of dwnlding in JENKINS
+1).schedule  -> one limitation is it keep on going its job which we have set  
+2).pol scm 
+>>.git fetch ->it will fetch metadata only meansif there is any update on github it will update local git status
+>>.scheduling build and pol scm is not good for purpose but we ahve other option also 
+>>.githun is reght candidate that know that there is some chng in github so we can do is we can tell github to conact jenkins to run its job byr doing process
+>>.now in githu there is a cocept ho webhooks which will conatct jenkins
+>>> another process also we have automate teh job jenkins by using JENKIN'S trigge bulid remote" option 
+>>larning about curl command which is used in cli to see our page is working or nor

@@ -1,0 +1,55 @@
+MLOPS LECTURE - 25 : 09/05/2020
+>>. we have to group together the feature such a way that they are are co-related
+>>.grouping them together will give us information and it is called fauture extraction
+>>.we human being used edge detector meachanis to detect object
+>>.convoluton is a technique to detect edge and finding main feature and then extract them
+>>.we dont which kernel will gice is better feature to detect edge and hoe manu kernel no. we have to chng  to do so that is the reasin we are usinf ML
+>>.converting a group of pixel into single pixel by tking the avg or max of the group of pixel is called pooling
+>>. pooling is some like resize without loosing the info
+>>.in     C     NN 2 thing happen at the back done by convolution
+       /    \
+convolve     pooling
+   |		|
+extration      minimize
+of feature	feature
+>>>no. of convolve we want ?  it just ike a hypperparameter
+>>.norally we use convolve for edge detection
+>>.after getting convolve image we use pooling and after getting pooling image
+we will flatten the image for NN
+>>.we dont know which filter to use and which will give us better result but evry filter will do the same opration of convolve
+>>.in image world our folder is called dataset
+>> in subfolder of folder ,its name is imp bcz in keras it take the name sbfolder as predciton or y
+
+
+
+
+>>>>>>>>>>DEVOPS LECTURE 10 /25   : 09-05-2020>>>>>>>>>>>>>>>
+
+
+
+>>.working directory == work in progress
+>>.when we merge a branch all the data + history comen in that branch to the branch we are merging
+>>.if want that there history dont come only the data we nee then we have to do "merge-sqaush " means it will take the data and not history 
+>>.c:git  merge --sqash [brnchname]
+>>.what this command will do ,it wil copy all the data in that branch and branch will think that there is new data and you to commit agaian
+>>. it just like clone with new commit 
+>>.to delte a branch forfullu 
+	c: git branch -D [brnchnem}
+>>.to delete a branch normally 
+	c:git branch -d [brnchnem}
+>>.if want to chng the tip of branch [dev] means if want ki dev bracnh ki tip hai usko chng krde master branch new tip se  chng krdo ..take nre data of master branch means dev branch ko new history malum honi chaiye master branch ki 
+for thiswe have to do rewind means rebase 
+C: git rebase master   ; dev branch will think the last chng master hs done after that only dev has done
+>>. we can aslo merge from mster to do 
+>>.c:git merge master 
+>>.what it will do ;it will copy all the data and make a new commit and dev (HEd ) will refer ths commit 
+>>. git track per line basis and if any line chng ;they come to know 
+>>.git always do auto-merge
+>>.when a dev and master branch chng a file at some position then there is alwyas a merge conflict and at conflict git will take to merge conflict branch caleed "master merging" branch and we have to resolve this conflit either  manually or using tool like p4merge 
+>>. to use tool 
+c: git config --global merge.tool p4merge 
+>> if any of the conflict come use this tool globally
+>>. when we will ue this it will create  2 file 1 backup file also 
+>>. if want that to ignore a file mean now want to git to track that file ,then we ahve to use a a file called .gitignore file 
+and we haev add the file or extension of the file that we want to ignore 
+and after adding we have to commit for the 1st tym and git will ifnore all that file 

@@ -1,0 +1,45 @@
+MLOPS LECTURE 17 : 29/04/2020
+
+>>.we can also create basic graph using Pandas funtion ex: .hist()  , .plot()
+>>.for classificaation we should know what is our X and what is pur Y
+>>.in classification when we have categorical variabe we have to convert it dummy variable
+>>if thre are lot variable and all are pandas dataframe type then in pandas we have funtion "concat" which  add all columns in 1 list 
+>> c: pandas.concat([ , , ],axis =1)
+>>.for doing binary classificaio we have to do import logistic Regression from skleran
+>>.for error we use MSE in LINera regrssion but in binary classification we cant do it 
+>>. to find model accuracy in binary classsifaiction we need some logic for this we use a concept called "confusion Metrics" .it will help in model accuracy
+>>. to use "cofusion metics" we have to import lib called "confusion_metrics 
+>>.there are two types of error : type 1 error (false positive) , type 2 erroe(false negative)
+
+devoplecture
+>>.SCM (source code manager)
+>>. SCM tool github
+>>.folder created in github mens workspace == repository
+>>.to create reposotory in gihub and intialize this repository
+>>.git hub in not only for sharing but aslo for version 
+>>.SCM also maintain history means keep all previous data in backup
+>>. if our data is keep on chnging then we should maintain the history means we should maintai verison
+>>.latest data also known as head means git is heading toward my latest data
+>>.VCS manages version for data
+>>. CVCS :centaralised control version control system
+>>.in cvcs we have only 1 chalnge called Network
+>>. this is the reason moving from Cvcs to Dvcs 
+
+>>. point-in-time means creating version
+>>.github is singlepoint of failure 
+>>. to create local repo we have install git on our system
+>>.when we have peer-peer connction /sharing then this is called Dvcs
+>>. to dwnld complte repo from github we have to do clone
+it will donlwd the repo=folder +files +all version
+>>.git log [filename] it will tell us all the history about tht file
+>>. to upload a fil from local repo to github we have proces for 
+>>. first the folder should tracked by git is called git workspacea
+>..git has great thing that is Vcs and git keep on trackng the file
+>>.to add file in workspace c: git add [filename]
+>>.to move to stash area c: git stash [filename]
+>>.to add in commit area c: git commit [filename]-m "comment"   {-m is used for commnting as a sake for remebering
+>>.if want to workspace is clean or not; c: git status 
+>>. git always compare with commit area and orgin(github repo)
+>>.how to roll back in git in local repo 2step are there
+>>.git reset HEAD [commid-id] [filename]
+>>. git chechkout --[filename]

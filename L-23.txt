@@ -1,0 +1,51 @@
+MLOPS LECTURE-23 / 05:05:2020
+
+>>.2 wys to do feature selection 1).feature eleminatio 2). feature extraction
+extraction means combining of feature and together become imp
+>>.both the thing will together give us less imp feaure and hence less feature less cost(cpu/ram/harddisk)and model will train faster
+>>.to do feature extraction is CNN
+c means convolution use for feature extraction and nn is nural network which we do usually use for feature selction means together is used good approach 
+>>.feed forwarding means sending feature to neuron bole tohbrain ko bejna feature ko
+>>.ex of lots of dataset is : video,image,signal 
+>>.whenever we eleminate a feature before this we have to check it is imp or not and if want to combine feature together means doing feature extraction then we should check wether the output they give after comning is good or not means wether our information is lost or not 
+>>.most of the big data prblm is sloved by CNN
+>>.whenever we trained model the data we shoul feed should be  always numerical wether it string or image or video or signal
+>>. to convert 2-d image in 1-d we have reshape option in numpy 
+>>. in keras we have module called mnist 
+>>.after loading this module it will dwnld the dataset from internet 
+>>.    			 dataset 
+		       /	 \
+	     traindataset         test dataset
+	     /		\	  /	     \
+	X_train       y_train    X_test	     y_test
+
+>>.ML doesn suppert 2-D numerical .it only accept 1-D array
+>>.to convert 2-D into 1-D
+c:img.reshape(28*28)  : this is only for one image 
+>>.if we want to cnvert all the images into 1-D array together 
+X_train.reshape(-1,28*28) ;-1 means dont schng whole 3-D array to 1-D only convert 2-d ARRAY 
+>>.in keras we have optin to cnvert categorical variable to dummyvariable
+>>.with NN approach also we can train our model of image data 
+
+
+>>>>>>>>>>>>>>>>>>>DEVOPS LECTURE-08/23  05:05:2020>>>>>>>>>>>>>>>.>>>>>>>
+>>.git provide db for keeping cpoy of a files colled commit area
+>>.unique name is given by commit to evry time we coomit called coomid id
+>>. gitk :it will show graphically aboug log of version
+>>.when we do 1st time coomit it will create copy /backup but 2nd tym we do it only copy of a new line olny 
+>>.ussin commid id we cn see the diffrence of version
+>>.where commid id is refrencing is called HEAD
+>>. git show [commid] :it will show the data of version
+>>. if want create branch 
+C: git branch [brnchname] or git checkout -b [brcnchname]
+>>.git branch -a will tell the no. brach we hae
+>>.git chechout [branchname] : if we want to goto diif brnch 
+>>. if we have done anychng in new brch then the new data will not be seen in master brnch 
+>>.if we chng in local brch and it is syn to remote tehn we do oly git push if not then for the 1st we to do uppstream
+C: git push -u origin [brnchname]
+>>.git pussh --all :it will upload the data from all branch 
+>>.if want to add data of new nrch to master then it is called merge
+C: git merge [brnchname] : run in master brch
+>>.now i we want to add data of master brnch to other brnch then it is called rebase
+C:git rebase merge :run in that bnrch mot in master 
+

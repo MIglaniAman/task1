@@ -1,0 +1,9 @@
+MLOPS LECTURE 15 : 25/04.2020
+>>.to visuallise data we have to use graph
+>>.graph can be used by many lib of python ex: seaborn.matplotlob,plotty
+>>.we can 3 thing on data : query , analysis , analytics
+>>..basic about statistical term :: frequency distribution table, intervals
+>>.histogram graph   i meant for how our distribution is done
+>>.granular in graph means how sub intevals of interval we have to make or how width of interval should be
+>>.tips is data set provided by seasborn itself
+>>.

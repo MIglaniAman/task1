@@ -1,0 +1,41 @@
+MLOPS LECTURE - 24 : 08/05/2020
+>>.every image pixel is feature 
+>>. for feature elemination NN is great approach but 1 imp point is if we are doing feature elemination then after removing the feature our info. should be loose
+>>.FEATURE EXRction main point is to secure information and method we used to do feature extractioni scomvolition
+>>.we can learn from single pixel but it will not give us any information nor it will make any sense means we not get to know which is correlated or not
+>>. combinig the feature that are correalated to each other .so that to make 1 feature is called feature extraction  
+>>. main moto of feature extraction is to 1)minimize featur 2). not to losse info.
+>>.huge box feature thatwill tell feature  are corelated or not are called filter==kernel==feature detector
+>>.who will help in picking feature and combing those feature . ? .here filter decided in picking feature 
+>>.convulation filter behind the scene help in convolution to come to know whether there is object or not
+>>.box sixe ==kernel==feature detector decide how many feature we will have 
+>>. normally size of box is 3x3 
+>>.if we dont have any edge then it will think that the feature is not imp
+>>.bigger the size of filter may loose info 
+>>.smalleer the size of filter may take lot of tym to trian the model
+>>.jumping if the boxes from pixle to other pixel is called "stride"
+>>.Stride play main role in loosing feature and info and normally we stride is set at 1 means 1 pixel per jump
+>>.convlutio is mechanism to find the feature and for finding the feature which will detect edge
+>>.no. of filter is together called feature map
+
+
+
+
+
+
+
+
+
+
+
+DEVOPS LECTURE 24/09  : 08/05/2020
+
+>>.whenever we run JENTIN job it lofe depend upon time of it run
+>>. whenver we a run a job the job is executed by jenkins and the exexcute these job called exexcutor
+>>. bydefault er have 2 executor and we can chng these aslo in jekins setting
+>>.if run more than 2 job then 3rd job will remian in build queue
+>>.we know about wo type pipelines  pulgin : its  tool to visualize our job graphically .
+1) build pipelines 2) deleviry pipeline
+
+
+

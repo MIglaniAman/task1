@@ -1,0 +1,109 @@
+MLPOS LECTURE 19 : 30/04/2020
+
+>>.to analyze data or feature selection also we ahve to do data analysis using visual e.i graph
+>>. graph we ahve created using folium ,matplotlib/seaborn/pandas but all tha grpah are static they are not dynamic 
+>>. to create dynamic/interactive graph we have famous python lib plottly and aslo cufflinks
+>>.in a list when we appned or add new thing there is one complication that the position no./index chng if we appned of all the other list member
+>>. in such type of list in which the position chng than it courrupt other member also 
+>> instaed of list we can use another data type called directory 
+>>. in directory we have ability toh give own index 
+>>. to create directory we have too use '{}'
+ex: dict = {'no':1, 'email':man@}
+>>.index in directry is calle key and other data is called value
+>>.we have another wya to create directory
+ex  dictn = dict(id =1 , name = 'aman') usnid dict keyword we can create dictinonary
+>>.we know we use numpy to create array
+>>. weknow range() funtion create the range we want 
+>>. if want create creat list usnig range we can also want to print  that then
+list(range(1,100))
+>>.in numpy if random funtion and in randim we randint keyword which will create a random array 
+np.random.randint(1,100,10)
+>>. if want to create array of diffrnt size and columns we have another keyword in random
+np.random.randn(10,4) it will creat 10 rowsa nd 4 columns
+>>.if we want to create numy array to dataframe we have funtion in pandas called datframe
+pd.DataFrame(x)
+>>.and if want ot give column name in dataframe we have keyword columns in datframe 
+pd.DataFrame(x, columns = [" " , " " , " " ]) 
+>>. to use plotly we have to 1st plotly lib 
+import plotly.graph_objs as go 
+>>. to use  offline mode we have another funtion
+import plotly.offline as pyo
+>>.to create we have scater keyword 
+datgraph =go.Scatter(x,y); but this will not xreate a graph it will show sum array 
+>>.and to create graph we ave another funtion 
+fig= go.Figure([]); it will tke the value of datagraph variable 
+>>. now if we wamt ot see the graph we have funtion plot in plotly 
+pyo.plot(fig) ; it will show the line graph now we want scatter graphwe have "  mode = 'marker' " keyword in sctter funtion 
+>>. if want  to set title we have another funtion called Layout" 
+c: layout= go.Layout(tile='marks" ) 
+now te see title we have put in layout keyword in Figure funtion
+c:fig =go.Figure(data=DATAGRAPH,layout=layout)
+
+
+>>. if want to use pyplot but using it is very comlicated due to lots o codes
+intead of using it we have new lib called ciiflinks
+whose syntax look like pandas or directly using pandas
+
+>>.to use cufflinks we have to import cufflinks lib
+>>.to use offlone we have funtion called c: cufflinks.go_offline()
+>>.to use cufflink which is similiar to pandas just only use iplot instead of plot funtion
+c:dataset.iplot(x =" " , y = " " , kind = " ", mode =" ")
+
+>>. to make 3-D graph we just have to give the in pdandas dateframe in iplot
+dataset = pd.Dataframe({id :x1,marks:y1,id:z1})
+>>.to create graph just use this command : dataset.iplot(kind='surface')
+
+
+
+
+<<<<<<<<<<<<<<<<<JENKINS LECTURE 19 : 30/04/2020 >>>>>>>>>>>>>>>>>>>>
+>>.jenkins is built over java  ut it is not necessary to learn java for jenkins
+>>.to use jenkins we have to install open jdk java
+>>. to start jenkins we have start it services 
+c: systemct start jenkins
+>>.jenkins works on port no. 8080
+>>.to use jenkins webui 
+c: http://ip:8080
+>>.mian power of jenkins is plugins
+>>.jenkins is a CI tool 
+what task we want from jenkins to do, for this we have tocreate job
+>>.the 1st page of jenkins webui is jenkons portal or dashboard
+>>.if our job is flexible measn it is freestyle project
+>>.item==project==job
+>>.blue coor means succeful ,red means unsuccessful
+>>.if our job is fail we should go to console ouput in confugiration option
+>>.git jenkins dont know git language for this we  have to make jenkins intelligent so here the concept plugins come up
+>>.means if we want to integrate jenkins with other tools thenwe have to install plugins
+>>. to install plugins > manage jenkin> manage plugins
+search nd dwnld accrdn to your need
+>>. if want to integrate git with jenkins 
+>>. we only want to tell jenkins what to do 
+for ex: clone of repo from git 
+>>. we have only give url to jenkins in source code mangemnt while creating a job
+
+>>.program is rum by some user or account 
+>>. here in jenkins run command by jenkins user 
+>>.if we run any command which jenkins user dont have power at that time 
+and we have to give the power to jenkin user
+c: setfacl -m u:jenkins:rwx <folder orfil name>
+>>.everthing that jeninsdwnld keep in their workspace .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

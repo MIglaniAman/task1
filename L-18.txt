@@ -1,0 +1,29 @@
+DEVOPS LECTURE -18 : 30/04/2020
+>>.github is cvcs 
+>>. git is dvcs we can create our own SCm and own local repo in our OS
+>>. to create a folder into git repo we have command : git init (it will intialise the folder into repo means git will start tracking the folder
+>>.git status : it will till thatus about that there is new file come up in git repo
+>>. git wil not commit until we will not give user name and email
+>>. to give user name and email we have to command 
+c: git config --global user.email "emailid"
+c: git config --global user.name "name"
+>>. to confirm that we hve give name or not 
+C: git config --global --list
+>>. c: git log (this coomand will tell us how we have version and also tell as about the author who ahve done this)
+>>.to send any code in git hub we should have create git repo in github  
+>>.if we have local repo and want to push to github than we should not intialize in github we only have create repo(means create only flder in github)
+>>.to push repo from local repo to remote system (github) we have to add remote address/url
+if want to know the remote syytem we have command : git remote -v
+>>. to tell our system to add remote system/url 
+C: git remote add <nameof the urlwe want to give> <ulr> #myth orgin is just a nickname of url nothing else it is not a concept or not a real name we can give any
+>>. this above command will sync local repo with github repo
+>>.before pushing to remote system we have to tell to start tracking also for 
+we have to give upstream also means link with remote system
+to make track with remote system we have 
+c: git push -u <url> master    ; it will link the remote and local repo plus also create a master in remote repo
+>>. c: git remote show  ; this command will tell more info about remote repo
+>>.git add <filename>  this command doent mean copying file to satging it means that git have an eye on file which means adding to statging area ..
+>>. when we clone from github hey will dwnld the whole repo of the github + all files 
+>>. now if our use case is we want to download file in a folder which we means only files we want then we have to do a trick 
+c: git clone <url>  .
+

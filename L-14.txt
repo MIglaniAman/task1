@@ -1,0 +1,40 @@
+MLOPS LECTURE 14 : 24/04/2020
+DATA VISUALISATION
+>>.to visualise data we have to create graph
+>>. to create map we have to use html and java script and leaflets
+but in python we have lib called folium
+>>.folium uses there htmland havascript behind he scene
+>>. for creating Map in folium we have funtion MAP .and in MAp we have keyword laction with zoom level
+>> .folium.Map(location=[ , ] , zoom_start = )
+>>.in folium we have funtion called marker for making the exact position of
+>>. to convert pandas datafram to arraywe values keyword and from array to covert a list is we hav funtion tolist
+>>. C:: dataframe.value.tolist
+>>.folium takes only list value in location
+>>. there are lots tile keyword in MAP
+>>. in MArker we have keyword Icon to which can chng the colur and stye of icon(marker)
+After break
+>>. pretrained model which we directly load for model and whose weight and biaswe already know
+>>. NN is the best algo for big data
+type NN :rcnn ,cnn,ann
+>>.to do objet.Detction we have aproach CNN
+>>. types of CNN: r-cnn,fast-cnn, yolo ,mask-cnn
+>>in these CNN we have use precrated weigth
+>>>yolo is just name of the model
+>>. yolo has 3 version
+>>.yolo usses coco dataset 
+>>.yolo-3 has more accuracy and more fast
+>>.yolo is build over darknet (atye of framework)
+>>.the funtion bheind the scene is darknet
+>>.darknet uses NN approack at its back 
+>>. 		OPtimizer 
+>>. the 1st value of  which help wieght is called intializer
+>..to wya to use intializer : manually ,algo method like xavier
+>>.what intializer we shoul take means kitna bada ya kitna chota
+>>.by default keras usses Xavier uniform intializer
+>>.the duty of optimizer is to how much we have to jump to nextvalue to have  less error
+>>. 2 types of optimizer : static(manually) ,adaptive(autochng and tuning itsel)
+>>.jumo == step ==learnig rate
+>>.we have to tell the optimizer the L.R
+>>.if L.r is less we have great accuracy
+>>.if L.R is high ess acuuracy and we will struck in an osccilation
+>>.
