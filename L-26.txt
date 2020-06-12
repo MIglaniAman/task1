@@ -29,3 +29,8 @@ converting numpy into 3d into 4d
 
 
 DEVOPS LECTURE 26 : 12/05/2020
+
+>>. the only use case of docker is to give env as soon as possible 
+>>.if docker is os terminate then we have to run it agian manually means it will be slow 
+>>. so to overcome this we have tool which will mange the docker called kUbernetes
+>>
